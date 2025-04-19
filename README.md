@@ -3,8 +3,8 @@
 
 This repository contains automated test cases for testing the OpenWeatherMap API using Katalon Studio. It includes two main test scenarios:
 
-- **Get 5-Day Weather Forecast** for Jakarta Selatan
-- **Get Current Air Pollution** for Jakarta Selatan
+- **Get 5-Day Weather Forecast** for Jakarta
+- **Get Current Air Pollution** for Jakarta
 
 This project demonstrates how to use Katalon Studio for API testing, including response validation, JSON schema validation, and assertion of critical response elements. This documentation will guide you through setting up and running the tests, as well as understanding the project structure.
 
@@ -145,11 +145,11 @@ If you want to run the entire test suite instead of individual test cases:
 ### 1. **Get 5-Day Weather Forecast**
 
 #### Test Objective:
-Validate the response for a 5-day weather forecast for Jakarta Selatan (Latitude: -6.21462, Longitude: 106.845131).
+Validate the response for a 5-day weather forecast for Jakarta (Latitude: -6.21462, Longitude: 106.845131).
 
 #### Test Steps:
-1. **Send Request**: A GET request is made to the OpenWeatherMap API to retrieve the weather forecast data for Jakarta Selatan.
-   - Endpoint: `http://api.openweathermap.org/data/2.5/forecast?lat=-6.21462&lon=106.845131&appid=YOUR_API_KEY`
+1. **Send Request**: A GET request is made to the OpenWeatherMap API to retrieve the weather forecast data for Jakarta.
+   - Endpoint: `${baseUrl}/forecast?lat=-6.21462&lon=106.845131&appid=${apiKey}`
    
 2. **Assertions**:
    - Verify the status code is **200** (success).
@@ -172,12 +172,12 @@ WS.validateJsonAgainstSchema(response, 'Include/resources/schema_forecast.json')
 ### 2. **Get Current Air Pollution**
 
 #### Test Objective:
-Validate the response for current air pollution data for Jakarta Selatan.
+Validate the response for current air pollution data for Jakarta.
 
 #### Test Steps:
 
-1. **Send Request**: A GET request is made to the OpenWeatherMap API to retrieve the current air pollution data for Jakarta Selatan.
-   - Endpoint: `http://api.openweathermap.org/data/2.5/air_pollution?lat=-6.21462&lon=106.845131&appid=YOUR_API_KEY`
+1. **Send Request**: A GET request is made to the OpenWeatherMap API to retrieve the current air pollution data for Jakarta.
+   - Endpoint: `${baseUrl}/air_pollution?lat=-6.21462&lon=106.845131&appid=${apiKey}`
    
 2. **Assertions**:
    - Verify the **status code** is **200** (indicating the request was successful).
