@@ -1,4 +1,5 @@
 # Katalon-WeatherAPI
+```
 ├── Include
 │   ├── resources
 │   │   ├── schema_forecast.json      # JSON schema for the weather forecast response
@@ -12,3 +13,4 @@
 ├── Reports
 │   └── Test Reports (generated after execution)
 └── Katalon Studio Project Files
+```
