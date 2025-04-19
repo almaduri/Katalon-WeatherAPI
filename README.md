@@ -162,9 +162,9 @@ Example code for **Get Current Air Pollution** test case:
 ```
 response = WS.sendRequest(findTestObject('CurrentAirPollution'))
 
-// Verify the response status code
 WS.verifyResponseStatusCode(response, 200)
 
-// Validate the JSON structure against the predefined schema
+WS.verifyElementPropertyValue(response, 'list[0].main.aqi', 1)
+
 WS.validateJsonAgainstSchema(response, 'Include/resources/schema_pollution.json')
 ```
