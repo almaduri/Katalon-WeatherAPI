@@ -139,3 +139,32 @@ WS.verifyElementPropertyValue(response, 'city.name', 'Jakarta')
 
 WS.validateJsonAgainstSchema(response, 'Include/resources/schema_forecast.json')
 ```
+
+---
+
+### 2. **Get Current Air Pollution**
+
+#### Test Objective:
+Validate the response for current air pollution data for Jakarta Selatan.
+
+#### Test Steps:
+
+1. **Send Request**: A GET request is made to the OpenWeatherMap API to retrieve the current air pollution data for Jakarta Selatan.
+   - Endpoint: `http://api.openweathermap.org/data/2.5/air_pollution?lat=-6.21462&lon=106.845131&appid=YOUR_API_KEY`
+   
+2. **Assertions**:
+   - Verify the **status code** is **200** (indicating the request was successful).
+   - Verify that the `list[0].main.aqi` field contains a valid Air Quality Index (AQI) value, such as `1` for good air quality.
+   - Validate the **JSON response** against the `schema_pollution.json` file to ensure the response structure matches expectations.
+
+Example code for **Get Current Air Pollution** test case:
+
+```
+response = WS.sendRequest(findTestObject('CurrentAirPollution'))
+
+// Verify the response status code
+WS.verifyResponseStatusCode(response, 200)
+
+// Validate the JSON structure against the predefined schema
+WS.validateJsonAgainstSchema(response, 'Include/resources/schema_pollution.json')
+```
