@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get 5-Day Forecast</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bbdaf495-3c6a-4972-a242-b4e5d0924f11</testCaseGuid>
+</TestCaseEntity>
