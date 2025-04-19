@@ -168,3 +168,64 @@ WS.verifyElementPropertyValue(response, 'list[0].main.aqi', 1)
 
 WS.validateJsonAgainstSchema(response, 'Include/resources/schema_pollution.json')
 ```
+
+---
+
+## How to View Test Reports
+
+After running the test suite or test case, you can view the generated reports in the **Reports** folder.
+
+### Step 1: Locate the Reports Folder
+
+1. Navigate to the `Reports` folder inside your project directory.
+
+2. Inside the `Reports` folder, you will find a subfolder named with the **current date and time** of the test run. This folder contains the reports for your most recent test execution.
+
+### Step 2: Open the HTML Report
+
+1. Inside the subfolder, locate the **HTML report** file (e.g., `index.html` or a similarly named file).
+   
+2. Open the HTML report file in your preferred browser to view the test results.
+
+### Step 3: Review the Test Results
+
+The generated report will include the following:
+
+- **Execution Status**: 
+   - Pass/Fail indicators for each test case.
+   - Information on whether each test was successful or failed.
+   
+- **Detailed Logs**: 
+   - Logs for each test step, showing the requests sent, responses received, and any assertion failures or successes.
+   
+- **Assertions**:
+   - Each assertion made during the test (e.g., verifying the status code, checking specific JSON fields, validating JSON schema) will be shown.
+   - Whether each assertion passed or failed.
+
+- **Summary of Test Execution**: 
+   - A summary showing how many tests were executed, how many passed, and how many failed. 
+   - Overall execution status (e.g., whether the test suite passed or failed).
+
+---
+
+### Example of Test Report Layout
+
+- **Test Suite Overview**:
+   - A summary of the test suite with details on the number of test cases executed and the results.
+   
+- **Test Case Details**:
+   - For each test case, you will find:
+     - The execution time.
+     - The result of each step, including any failures or assertion errors.
+     - The response body from the API request.
+     
+- **Test Logs**:
+   - Detailed logs, including requests and responses for every step of the test, are included to help diagnose failures.
+  
+### Step 4: Analyze Failures
+
+If any tests fail:
+- The report will highlight the failed test cases.
+- The failure logs will provide information on why the test failed (e.g., assertion errors, timeout issues, incorrect responses).
+  
+You can use these logs to debug and improve the tests.
