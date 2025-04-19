@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://api.openweathermap.org/data/2.5'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'YOUR_API_KEY'</initValue>
+      <name>apiKey</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
