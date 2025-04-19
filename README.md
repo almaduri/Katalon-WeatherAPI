@@ -62,14 +62,57 @@ git clone https://github.com/almaduri/Katalon-WeatherAPI.git
 
 ---
 
-### 3. Update API Key
+## Step 3: Create a New Profile (Optional)
 
-In the test objects `WeatherForecast` and `CurrentAirPollution`, you need to replace the **default API key** with your own OpenWeatherMap API key.
+If you don’t already have a profile, you can create a new one:
 
-- Open the **WeatherForecast** object from the **Test Objects** folder.
-- Find the URL in the **Request** field, and replace the `appid=YOUR_API_KEY` part with your personal API key.
+1. Click on **Add** to create a new profile.
+2. Name the profile (e.g., **WeatherAPIProfile**) and click **OK**.
 
-Repeat this for the **CurrentAirPollution** test object.
+If you already have an existing profile (e.g., **Default**), you can modify it directly.
+
+---
+
+## Step 4: Add Global Variables for `baseUrl` and `apiKey`
+
+1. In the **Profiles** section, select the profile you want to edit (e.g., **WeatherAPIProfile**).
+2. In the **Global Variables** tab, click on **Add** to create a new global variable.
+3. Define the following global variables:
+
+### a) **baseUrl**
+
+- **Name**: `baseUrl`
+- **Type**: `String`
+- **Value**: `http://api.openweathermap.org/data/2.5`
+
+This is the base URL for the OpenWeatherMap API.
+
+### b) **apiKey**
+
+- **Name**: `apiKey`
+- **Type**: `String`
+- **Value**: `YOUR_API_KEY`
+
+Replace `YOUR_API_KEY` with your actual API key from OpenWeatherMap.
+
+### Example of Global Variables Table
+
+| Name    | Type   | Value                                  |
+|---------|--------|----------------------------------------|
+| baseUrl | String | `http://api.openweathermap.org/data/2.5` |
+| apiKey  | String | `YOUR_API_KEY` (replace with your actual key) |
+
+4. After adding both variables, click **Apply** to save the changes.
+
+---
+
+## Step 5: Use Global Variables in Test Objects and Test Cases
+
+Now that you've defined your global variables, you can use them in your test objects and test cases.
+
+### a) **Test Object Updates**
+
+Update the **WeatherForecast** and **CurrentAirPollution** test objects to use the global variables:
 
 ---
 
