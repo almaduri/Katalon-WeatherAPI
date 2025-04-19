@@ -44,11 +44,44 @@ Here's the folder structure of the project:
 
 ## How to Set Up the Project
 
-### Clone the Repository
+### 1. Clone the Repository
 
 Clone this repository to your local machine:
 
 ```
 git clone https://github.com/almaduri/Katalon-WeatherAPI.git
 ```
+
+### 2. Open Katalon Studio
+
+1. Open Katalon Studio.
+
+2. Select **File > Open Project**.
+
+3. Navigate to the cloned repository folder and open the project.
+
+---
+
+### 3. Update API Key
+
+In the test objects `WeatherForecast` and `CurrentAirPollution`, you need to replace the **default API key** with your own OpenWeatherMap API key.
+
+- Open the **WeatherForecast** object from the **Test Objects** folder.
+- Find the URL in the **Request** field, and replace the `appid=YOUR_API_KEY` part with your personal API key.
+
+Repeat this for the **CurrentAirPollution** test object.
+
+---
+
+## How to Run the Tests
+
+### Step 1: Running Tests via Katalon Studio UI
+
+1. Open Katalon Studio and go to the **Test Cases** folder.
+
+2. Right-click on the test case you want to run (either **Get 5-Day Forecast** or **Get Current Air Pollution**).
+
+3. Select **Run** to execute the selected test case.
+
+---
 
