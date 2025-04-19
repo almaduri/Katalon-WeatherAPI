@@ -29,7 +29,7 @@ Here's the folder structure of the project:
 │   ├── Get 5-Day Forecast
 │   └── Get Current Air Pollution
 ├── Test Suites
-│   ├── WeatherAPI_Tests
+│   ├── WeatherAPISuite
 ├── Test Objects
 │   ├── WeatherForecast
 │   └── CurrentAirPollution
