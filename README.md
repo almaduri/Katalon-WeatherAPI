@@ -85,3 +85,15 @@ Repeat this for the **CurrentAirPollution** test object.
 
 ---
 
+### Step 2: Running the Test Suite via Katalon Studio UI
+
+If you want to run the entire test suite instead of individual test cases:
+
+1. Open Katalon Studio and go to the **Test Suites** folder.
+
+2. Right-click on **WeatherAPI_Tests**.
+
+3. Select **Run** to execute the test suite, which will run both test cases (**Get 5-Day Forecast** and **Get Current Air Pollution**) sequentially.
+
+---
+
