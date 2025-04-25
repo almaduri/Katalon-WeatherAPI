@@ -18,7 +18,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${baseUrl}/air_pollution?lat=-6.21462&amp;lon=106.845131&amp;appid=${apiKey}</restUrl>
+   <restUrl>${baseUrl}/air_pollution?lat=-6.9987&amp;lon=106.7178&amp;appid=${apiKey}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

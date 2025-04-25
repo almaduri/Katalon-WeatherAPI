@@ -22,6 +22,6 @@ response = WS.sendRequest(findTestObject('WeatherForecast'))
 WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'cod', '200')
-WS.verifyElementPropertyValue(response, 'city.name', 'Jakarta')
+WS.verifyElementPropertyValue(response, 'city.name', 'Cilandak')
 
 WS.validateJsonAgainstSchema(response, 'Include/resources/schema_forecast.json')
